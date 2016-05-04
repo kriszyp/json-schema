@@ -25,6 +25,9 @@
   },
   "directories": { "lib": "./lib" },
   "main": "./lib/validate.js",
+  "files": [
+    "lib"
+  ],
   "devDependencies": { "vows": "*" },
   "scripts": { "test": "echo TESTS DISABLED vows --spec test/*.js" }
 }
