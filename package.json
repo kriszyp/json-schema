@@ -12,11 +12,11 @@
   "licenses": [
      {
          "type": "AFLv2.1",
-         "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43"
+         "url": "https://github.com/dojo/dojo/blob/master/LICENSE"
      },
      {
-         "type": "BSD",
-         "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13"
+         "type": "BSD 3-Clause",
+         "url": "https://github.com/dojo/dojo/blob/master/LICENSE"
      }
   ],
   "repository": {
