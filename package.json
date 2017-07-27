@@ -11,11 +11,11 @@
   ],
   "licenses": [
      {
-         "type": "AFLv2.1",
+         "type": "AFL-2.1",
          "url": "https://github.com/dojo/dojo/blob/master/LICENSE"
      },
      {
-         "type": "BSD 3-Clause",
+         "type": "BSD-3-Clause",
          "url": "https://github.com/dojo/dojo/blob/master/LICENSE"
      }
   ],
