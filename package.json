@@ -9,16 +9,7 @@
     "json",
     "schema"
   ],
-  "licenses": [
-     {
-         "type": "AFLv2.1",
-         "url": "https://github.com/dojo/dojo/blob/master/LICENSE"
-     },
-     {
-         "type": "BSD 3-Clause",
-         "url": "https://github.com/dojo/dojo/blob/master/LICENSE"
-     }
-  ],
+  "license": "(AFL-2.1 OR BSD-3-Clause)",
   "repository": {
     "type":"git",
     "url":"http://github.com/kriszyp/json-schema"
