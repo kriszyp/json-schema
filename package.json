@@ -9,6 +9,9 @@
     "json",
     "schema"
   ],
+  "files": [
+    "lib"
+  ],
   "license": "(AFL-2.1 OR BSD-3-Clause)",
   "repository": {
     "type":"git",
@@ -19,4 +22,3 @@
   "devDependencies": { "vows": "*" },
   "scripts": { "test": "echo TESTS DISABLED vows --spec test/*.js" }
 }
-
