@@ -92,4 +92,30 @@ var suite = vows.describe('JSON Schema').addBatch({
     'Json-Ref self-validates': assertSelfValidates('json-ref'),
     'Json-Ref/Hyper': assertValidates('json-ref', 'hyper-schema'),
     'Json-Ref/Core': assertValidates('json-ref', 'schema')*/
+    prototypePollution: function() {
+        console.log('testing')
+        const instance = JSON.parse(`
+        {
+        "$schema":{
+            "type": "object",
+            "properties":{
+            "__proto__": {
+                "type": "object",
+                
+                "properties":{
+                "polluted": {
+                    "type": "string",
+                    "default": "polluted"
+                }
+                }
+            }
+            },
+            "__proto__": {}
+        }
+        }`);
+
+        const a = {};
+        validate(instance);
+        assert.equal(a.polluted, undefined);
+    }
 }).export(module);
