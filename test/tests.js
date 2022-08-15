@@ -117,37 +117,5 @@ var suite = vows.describe('JSON Schema').addBatch({
         const a = {};
         validate(instance);
         assert.equal(a.polluted, undefined);
-    },
-    'validation of object with overridden hasOwnProperty does not throw': function() {
-        const schema = {
-            type: 'object',
-            properties: {
-                property: {
-                    type: 'string',
-                }
-            },
-        };
-
-        const instance = { hasOwnProperty: true };
-        assert.doesNotThrow(function() {
-            validate(instance, schema);
-        });
-    },
-    'validation of object with null prototype does not throw': function() {
-        const schema = {
-            type: 'object',
-            properties: {
-                property: {
-                    type: 'string',
-                }
-            },
-        };
-
-        const instance = Object.assign(Object.create(null), {
-            property: "value"
-        });
-        assert.doesNotThrow(function() {
-            validate(instance, schema);
-        });
-    },
+    }
 }).export(module);
