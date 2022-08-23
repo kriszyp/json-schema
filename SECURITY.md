@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilities to kriszyp@gmail.com.
+wwww.bounty.github.com
